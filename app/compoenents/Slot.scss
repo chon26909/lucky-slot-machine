@@ -1,0 +1,31 @@
+$icon_width: 79px;
+$icon_height: 79px;
+$num_col: 6;
+$num_icons: 3 * $num_col;
+
+.slot-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slots { 
+    width:  ($num_col * $icon_width) + ($num_col * 16);
+    height: 3.5 * $icon_height;
+    border: 1px solid black;
+    padding: 0.2 * $icon_height;
+    display: flex;
+    justify-content: space-between;
+
+    .reel { 
+        border: 1px solid black;
+        width: $icon_width;
+        height: 3 * $icon_height;
+        background-image: url('https://assets.codepen.io/439000/slotreel.webp');
+        background-repeat: repeat-y;
+        background-position: 0 0px;
+    }
+}
+
